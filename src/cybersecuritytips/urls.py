@@ -17,12 +17,11 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path
-from pages.views import homepage_view, emailspage_view
+from pages.views import homepage_view, alertpage_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepage_view, name='home'),
-    path('emails/', emailspage_view, name='emails'),
+    path('alert/', alertpage_view, name='alert'),
     
-
 ]
