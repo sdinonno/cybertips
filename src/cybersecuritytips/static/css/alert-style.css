@@ -1,0 +1,10 @@
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700");
+div {
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
