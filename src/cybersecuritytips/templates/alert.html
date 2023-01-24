@@ -6,23 +6,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script>document.getElementsByTagName("html")[0].className += " js";</script>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/alert-style.css' %}">
         <title>UCSE DAR | Ciberseguridad</title>
     </head>
     <body>
         <section>
-            <div class="text-component text-center">
-                <h2>Fuiste parte de un simulacro de phishing llevado a cabo por un alumno de UCSE DAR.</h2>
-                <h3><strong>No te preocupes, no robaremos ninguna de tus credenciales.</strong></h3>
+            <div>
+                <h1>Fuiste parte de un simulacro de phishing llevado a cabo por un alumno de UCSE DAR.</h3>
+                <h2><strong>No te preocupes, no robaremos ninguna de tus credenciales.</strong></h3>
                 <p>Este simulacro forma parte de una tesis de grado de la carrera Ingenieria en Informatica.</p>
-                <p>Te solicitamos que puedas completar el curso a continuacion para detectar posibles fraudes mediante e-mails y darte algunas herramientas.</p>
-                <p>Ademas como parte del trabajo te pedimos que <strong>no adviertas a tus compañeros</strong> sobre este email
-                para que las estadisticas recabadas no se vean afectadas.</p><br>
-                <button class="btn content  ">Ver curso</button>
+                <p>Te solicitamos que puedas completar el curso a continuacion para detectar posibles fraudes mediante e-mails y darte algunas herramientas.
+                Ademas como parte del trabajo te pedimos que <strong>no adviertas a tus compañeros</strong> sobre este email
+                para que las estadisticas recabadas no se vean afectadas.
+                </p><br>
             </div>
-        </section>  
-        <section>
-            <p>Si tenes dudas por favor contactate con Sofia Di Nonno (alumna a cargo del proyecto) por medio del siguiente email: <strong>sofidinonno@gmail.com</strong></p>
+            <div>
+                <button class="overview__button overview__button-enrolled">
+                    <a href=''>Ver curso</a>
+                </button>
+            </div>
+            <br>
+            <div class="">
+                <p>Si tenes dudas por favor contactate con Sofia Di Nonno (alumna a cargo del proyecto) por medio del siguiente email: <strong>sofidinonno@gmail.com</strong></p>
+            </div>
         </section>
         <script src="{% static 'js/util.js' %}"></script> <!-- util functions included in the CodyHouse framework -->
         <script src="{% static 'js/main.js' %}"></script>   
