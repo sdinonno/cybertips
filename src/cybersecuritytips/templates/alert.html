@@ -13,32 +13,18 @@
         <section>
             <div>
                 <h1>Fuiste parte de un simulacro de phishing llevado a cabo por un alumno de UCSE DAR.</h3>
-                <h2><strong>No te preocupes, no robaremos ninguna de tus credenciales.</strong></h3>
+                <h2><strong>No te preocupes, no robaremos ninguna de tus credenciales. &#128274;</strong></h3>
                 <p>Este simulacro forma parte de una tesis de grado de la carrera Ingeniería en Informática.</p>
-                <p>Te solicitamos que puedas completar el curso a continuación para detectar posibles fraudes cibernéticos y darte algunas herramientas para enfrentarlos.
-                Además como parte del trabajo te pedimos que <strong>no adviertas a tus compañeros</strong> sobre este email
-                para que las estadísticas recabadas no se vean afectadas.
-                </p>
+                <p>Te solicitamos que revises la información a continuación para darte algunos consejos sobre ciberseguridad. Además como parte del trabajo te pedimos que <strong>no adviertas a tus compañeros sobre este email </strong> para que las estadísticas que esperamos obtener no se vean afectadas.
+                </p> 
                 <br>
             </div>
-                <button id="btn-abrir-popup" class="btn-open-popup">Ver curso</button>
+            <form action="{% url 'home' %}" class="form">
+                <input type="submit" class="btn-submit" value="COMENZAR">
+            </form>
             <br>
-            <div class="overlay" id="overlay">
-                <div class="popup" id="popup">
-                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-                    <h3>Por favor </h3>
-                    <h4>y recibe un cupon de descuento.</h4>
-                    <form action="">
-                        <div class="contenedor-inputs">
-                            <input type="text" placeholder="Nombre">
-                            <input type="email" placeholder="Correo">
-                        </div>
-                        <input type="submit" class="btn-submit" value="Suscribirse">
-                    </form>
-                </div>
-            </div>
             <div class="">
-                <p>Si tenés dudas por favor contactate con Sofia Di Nonno (alumna a cargo del proyecto) por medio del siguiente email: <strong>sofidinonno@gmail.com</strong></p>
+                <p>Si tenés dudas por favor contactate con Sofía Di Nonno (alumna a cargo del proyecto) por medio del siguiente email: <strong>sofidinonno@gmail.com</strong></p>
             </div>
         </section>
         <script src="{% static 'js/util.js' %}"></script> <!-- util functions included in the CodyHouse framework -->
