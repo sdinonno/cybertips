@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Tip, TipDescription
 
-# Register your models here.
+
+admin.site.register(Tip)
+admin.site.register(TipDescription)
