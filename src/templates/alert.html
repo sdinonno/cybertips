@@ -1,0 +1,36 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>document.getElementsByTagName("html")[0].className += " js";</script>
+        <link rel="stylesheet" href="{% static 'css/alert-style.css' %}">
+        <title>UCSE DAR | Ciberseguridad</title>
+    </head>
+    <body>
+        <section>
+            <div>
+                <h1>Fuiste parte de un simulacro de phishing llevado a cabo por un alumno de UCSE DAR.</h3>
+                <h2><strong>No te preocupes, no robaremos ninguna de tus credenciales. &#128274;</strong></h3>
+                <p>Este simulacro forma parte de una tesis de grado de la carrera Ingeniería en Informática.</p>
+                <p>Te solicitamos que revises la información a continuación para darte algunos consejos sobre ciberseguridad. Además como parte del trabajo te pedimos que <strong>no adviertas a tus compañeros sobre este email </strong> para que las estadísticas que esperamos obtener no se vean afectadas.
+                </p> 
+                <br>
+            </div>
+            <form action="{% url 'home' %}" class="form">
+                <input type="submit" class="btn-submit" value="COMENZAR">
+            </form>
+            <br>
+            <div class="">
+                <p>Si tenés dudas por favor contactate con Sofía Di Nonno (alumna a cargo del proyecto) por medio del siguiente email: <strong>sofidinonno@gmail.com</strong></p>
+            </div>
+        </section>
+        <script src="{% static 'js/util.js' %}"></script> <!-- util functions included in the CodyHouse framework -->
+        <script src="{% static 'js/main.js' %}"></script>   
+        <script src="{% static 'js/popup.js' %}"></script>   
+    </body>
+</html>
+
+
