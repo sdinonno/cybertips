@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-from .models import Question, Answer, Attempts
+from .models import Question, Answer, Attempts, QuizUser
+from .forms import ChooseInlineFormset
 
 
 class ChooseAnswerInline(admin.TabularInline):
@@ -8,6 +9,7 @@ class ChooseAnswerInline(admin.TabularInline):
     can_delete = False
     max_num = Answer.MAX_ANSWER
     min_num = Answer.MAX_ANSWER
+    formset = ChooseInlineFormset
 
 
 class QuestionAdmin(admin.ModelAdmin):
@@ -27,3 +29,4 @@ class AttemptsAdmin(admin.ModelAdmin):
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(Answer)
 admin.site.register(Attempts)
+admin.site.register(QuizUser)
