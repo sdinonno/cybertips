@@ -889,8 +889,8 @@ h1,h2,h3,h4{
     line-height:var(--heading-line-height, 1.2)
 }
 .text-xxxl{
-    font-size:2.48832em;
-    font-size:var(--text-xxxl, 2.488em)
+    font-size:4.48832em;
+    font-size:var(--text-xxxl, 4.488em)
 }
 h1,.text-xxl{
     font-size:2.0736em;
@@ -3106,7 +3106,7 @@ li:last-child .cd-faq__category{
 }
 .cd-faq__items{
     position:fixed;
-    z-index:1;
+    x:1;
     height:100%;
     width:90%;
     top:0;
@@ -3381,9 +3381,8 @@ body{
     }
 }
 .cd-header h1{
-    font-size:4.728em;
-    font-size:var(--text-xxxl);
-    font-weight:300;
+    font-size:3.728em;
+    font-weight:800;
     color:hsl(0, 0%, 100%);
     color:var(--cd-color-4);
     -webkit-font-smoothing:antialiased;
@@ -3391,7 +3390,7 @@ body{
 }
 @media (min-width: 80rem){
     .cd-header{
-        --header-height: 240px
+        --header-height: 340px
     }
 }
 .cd-article-link{
@@ -3400,4 +3399,53 @@ body{
     font-size:0.83333em;
     font-size:var(--text-sm)
 }
- 
+.cd-header h4{
+    font-size:1.0em;
+    font-weight:700 ;
+    color:hsl(0, 0%, 20%);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 3;
+    transition: 200ms ease-in-out opacity;
+}
+.popup-content {
+    width: clamp(400px, 90vw, 700px);
+    background-color: #fff;
+    padding: clamp(1.5rem, 100vw, 3rem);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+    border-radius: .5em;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 200ms ease-in-out opacity,
+                200ms ease-in-out transform;
+    position: relative;
+}
+.popup h1 {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+.popup h1:active {
+    transform: scale(.9);
+}
+
+.showPopup {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
