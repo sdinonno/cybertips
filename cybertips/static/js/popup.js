@@ -1,15 +1,11 @@
-var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
-	overlay = document.getElementById('overlay'),
-	popup = document.getElementById('popup'),
-	btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+const popup = document.querySelector('.popup');
+const x = document.querySelector('.popup-content h1');
 
-btnAbrirPopup.addEventListener('click', function(){
-	overlay.classList.add('active');
-	popup.classList.add('active');
-});
-
-btnCerrarPopup.addEventListener('click', function(e){
-	e.preventDefault();
-	overlay.classList.remove('active');
-	popup.classList.remove('active');
-});
+window.addEventListener('load', () => {
+	popup.classList.add('showPopup');
+	popup.childNodes[1].classList.add('showPopup');
+})
+x.addEventListener('click', () => {
+	popup.classList.remove('showPopup');
+	popup.childNodes[1].classList.remove('showPopup');
+})
