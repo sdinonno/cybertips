@@ -15,15 +15,26 @@
 	<header class="cd-header flex flex-column flex-center">
 		<div class="text-component text-center">
 			<h1>Cybertips</h1>
-			<p>Recomendaciones de ciberseguridad para un entorno de trabajo seguro en UCSE DAR.</p>
+			<h4>Recomendaciones de ciberseguridad para un entorno de trabajo seguro en UCSE DAR.</h4>
 		</div>
 	</header>
 
 	<section class="container max-width-md margin-top-lg margin-bottom-lg text-justify">
-		<img src="{% static 'img/Data_security_28.jpg' %}">
-		<p>Crear una cultura de ciberseguridad donde cada persona entienda la importancia de mantener comportamientos seguros mientras se utilizan activos informáticos e internet es el objetivo de UCSE DAR. Sin embargo, no es solo una tarea del departamento de informática, sino que nos concierne a todos como integrantes de ésta organización.</p><br>
+		<!--<img src="{% static 'img/Data_security_28.jpg' %}">-->
+		<p>Crear una cultura de ciberseguridad donde cada persona entienda la importancia de mantener comportamientos seguros mientras se utilizan dispositivos e internet es el objetivo de UCSE DAR. Sin embargo, no es solo una tarea del departamento de informática, sino que nos concierne a todos como integrantes de ésta organización.</p><br>
 		<p>A continuación, te brindamos información útil para que puedas identificar posibles amenazas de ciberseguridad y consejos para el uso de tus cuentas y dispositivos.</p>
 	</section>
+
+	<div class="popup">
+		<div class="popup-content text-justify">
+			<h1>X</h1><br>
+			<h2>Advertencia</h2><br>
+			<p>Fuiste parte de un simulacro de phishing llevado a cabo por un alumno de UCSE DAR en el marco de un trabajo final de la carrera Ingeniería en Informática. <strong>No te preocupes, no robaremos ninguna de tus credenciales. &#128274;</strong></p><br>
+			<p>Solicitamos que revises la información a continuación para brindarte recomendaciones sobre ciberseguridad. Además, te pedimos que <strong>no adviertas a tus compañeros sobre este email </strong> para que las estadísticas que esperamos obtener no se vean afectadas.</p> 
+		<br>
+		<p>Si tenés dudas por favor contactate con Sofía Di Nonno (alumna a cargo del proyecto) <strong>sofidinonno@gmail.com</strong> o Román Zenobi (tutor del proyecto).</p>
+		</div>
+	</div>
 
 	<section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
 		<ul class="cd-faq__categories">
@@ -31,7 +42,7 @@
 			<li><a class="cd-faq__category truncate" href="#emails">Emails</a></li>
 			<li><a class="cd-faq__category truncate" href="#passwords">Passwords</a></li>
 			<li><a class="cd-faq__category truncate" href="#navigation">Navegación segura</a></li>
-			<li><a class="cd-faq__category truncate" href="#devices">Dispositivos</a></li>
+			<li><a class="cd-faq__category truncate" href="#devices">Celulares / Notebooks</a></li>
 			<li><a class="cd-faq__category truncate" href="#help">Ayuda</a></li>
 		</ul> <!-- cd-faq__categories -->
 
@@ -84,19 +95,6 @@
 								a nadie, sino invitarnos a reflexionar sobre nuestro comportamiento y responsabilidad a
 								la hora de interactuar con los sistemas y con información confidencial.</p>
 							<p></p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
-
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>No todas son malas noticias</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>Quizás hasta este punto sólo leíste que hay una constante amenaza sobre tus activos
-								informáticos y los de la empresa donde trabajás.</p>
-							<p>No obstante, está en nosotros ser conscientes de esto y actuar en consecuencia. Es por
-								eso que desarrollamos éste sitio para que puedas capacitarte y consultar cada vez que te
-								surja alguna duda o necesites una sugerencia.</p>
 						</div>
 					</div> <!-- cd-faq__content -->
 				</li>
@@ -168,7 +166,7 @@
 									para brindar seguridad a sus clientes en las comunicaciones y evitar el uso de marca
 									para fraudes. </p>
 								<p>Tomemos como ejemplo este correo electrónico. El mismo fue enviado desde la dirección
-									<strong>ucsedarinfo@gmail.com</strong>. Sin embargo, UCSE cuenta con un dominio
+									<strong>info.dar.ucse.edu@gmail.com</strong>. Sin embargo, UCSE cuenta con un dominio
 									propio y sus emails siempre terminan en "@ucse.edu.ar".
 								</p>
 								<li type="circle">
@@ -469,7 +467,7 @@
 
 			<ul id="devices" class="cd-faq__group">
 				<li class="cd-faq__title">
-					<h2>Dispositivos</h2>
+					<h2>Celulares / Notebooks</h2>
 				</li>
 				<li class="cd-faq__item">
 					<a class="cd-faq__trigger" href="#0"><span>Instala un antivirus</span></a>
@@ -485,7 +483,7 @@
 								los ingenieros encargados de lidiar con ellas crean actualizaciones en los antivirus
 								para proteger a sus usuarios de éstas. Si ves una notificación de actualización, ¡no la
 								ignores!</p>
-							<p>Éstas recomendaciones son válidas tanto para computadores como dispositivos móbiles como celulares o tables.</p>
+							<p>Éstas recomendaciones son válidas para computadoras y dispositivos móbiles como celulares o tables.</p>
 						</div>
 					</div> <!-- cd-faq__content -->
 				</li>
@@ -495,10 +493,10 @@
 							actualizados</span></a>
 					<div class="cd-faq__content">
 						<div class="text-component">
-							<p>No existe un programa o dispositivo que se encuentre libre de defectos o
-								vulnerabilidades, es por esto que los equipos de ingeniería luego de encontrarlos y
+							<p>No existe programa o dispositivo que se encuentre libre de defectos o
+								vulnerabilidades, es por esto que sus creadores luego de encontrarlos y
 								resolverlos lanzan actualizaciones a sus usuarios. Es muy importante que siempre
-								mantengas actualizado el sistema operativo de tu dispositivo móvil o tu computadora y los programas o
+								mantengas actualizado el sistema operativo de tu dispositivo móvil o tu computadora y los programas /
 								aplicaciones para evitar que éstas vulnerabilidades sean una puerta de
 								entrada para un ciberataque.</p>
 						</div>
@@ -523,8 +521,29 @@
 					<a class="cd-faq__trigger" href="#0"><span>Utiliza datos biométricos, PIN y/ patrón.</span></a>
 					<div class="cd-faq__content">
 						<div class="text-component">
-							<p></p>
-							<p></p>
+							<ul>
+								<p>Es posible establecer un dato biométrico, PIN y/o patrón tanto para el acceso a tu celular o computadora como para utilizar las aplicaciones instaladas.
+								Con éste tipo de métodos es posible restringir el uso no autorizado de nuestros dispositivos, sin embargo algunos son más efectivos que otros.</p>
+								<li type="circle">
+									<p><strong>PIN</strong></p>
+								</li>
+								<p>Se trata de un sistema en el cual el usuario establece un código de 4 a 6 dígitos y debe ingresarlo cada vez que quiera utilizar su dispositivo o aplicación. \n
+								Sin dudas éste método es el más utilizado pero también el menos seguro. Esto se debe a que, en caso de que el código no sea demasiado largo, los hackers pueden utilizar un ataque donde se intenten muchas combinaciones de PIN hasta encontrar el correcto.
+								</p>
+
+								<li type="circle">
+									<p><strong>Patrón</strong></p>
+								</li>
+								<p>Es el método más utilizado por usuarios de dispositivos Android. Su funcionamiento es muy sencilloÑ se deben unir los puntos en un orden concreto que el usuario estableció anteriormente.
+									Por lo general la cuadrícula de puntos tiene un tamaño de 3x3 o 4x4. Cuánto mayor es el tamaño mayor número de combinaciones existen, lo cuál genera mayor dificultad para adivinar el patrón.
+								</p>
+								<p>Su mayor vulnerabilidad es la suciedad en la pantalla: el arrastre de los dedos para realizar la unión de puntos deja marcas que pueden facilitar indicios del patrón a terceros no autorizados.</p>
+								<li type="circle">
+									<p><strong>Sistemas biométricos</strong></p>
+								</li>
+								<p>Ésta método verifica automáticamente la identidad de la persona mediante la medición de alguna de sus características físicas. Los dos más extendidos son el reconocimiento facial y la huella dactilar.</p>
+								<p>Si bien se ha conseguido engañar a este tipo de sistemas en algunas ocasiones, se trata de uno de los sistemas más fiable. No existe una forma sencilla de recrear y utilizar un dato biométrico sin tener al menos ciertos conocimientos especializados.</p>
+							</ul>
 						</div>
 					</div> <!-- cd-faq__content -->
 				</li>
@@ -545,18 +564,13 @@
 			</ul>
 		
 		</div> <!-- cd-faq__items -->
-
-
-
 		<a href="#0" class="cd-faq__close-panel text-replace">Close</a>
 
 		<div class="cd-faq__overlay" aria-hidden="true"></div>
-	</section> <!-- cd-faq -->
+	</section> <!-- cd-faq -->	
+	<script src="{% static 'js/popup.js' %}"></script>
 	<script src="{% static 'js/util.js' %}"></script> <!-- util functions included in the CodyHouse framework -->
 	<script src="{% static 'js/main.js' %}"></script>
-	<section>
-		<a href="https://www.freepik.es/vector-gratis/seguridad-datos-global-seguridad-datos-personales-ilustracion-concepto-linea-seguridad-datos-ciberneticos-seguridad-internet-o-privacidad-proteccion-informacion_12953631.htm#query=ciberseguridad&position=13&from_view=keyword&track=sph">Imagen de jcomp</a> en Freepik
-	</section>
 	
 </body>
 
