@@ -20,8 +20,7 @@
 	</header>
 
 	<section class="container max-width-md margin-top-lg margin-bottom-lg text-justify">
-		<!--<img src="{% static 'img/Data_security_28.jpg' %}">-->
-		<p>Crear una cultura de ciberseguridad donde cada persona entienda la importancia de mantener comportamientos seguros mientras se utilizan dispositivos e internet es el objetivo de UCSE DAR. Sin embargo, no es solo una tarea del departamento de informática, sino que nos concierne a todos como integrantes de ésta organización.</p><br>
+		<p>Crear una cultura de ciberseguridad donde cada persona entienda la importancia de mantener comportamientos seguros mientras se utilizan dispositivos e internet es el objetivo que toda empresa debe perseguir. Sin embargo, no es sólo una tarea del departamento de informática, sino que nos concierne a todos como integrantes una organización.</p><br>
 		<p>A continuación, te brindamos información útil para que puedas identificar posibles amenazas de ciberseguridad y consejos para el uso de tus cuentas y dispositivos.</p>
 	</section>
 
@@ -29,10 +28,10 @@
 		<div class="popup-content text-justify">
 			<h1>X</h1><br>
 			<h2>Advertencia</h2><br>
-			<p>Fuiste parte de un simulacro de phishing llevado a cabo por un alumno de UCSE DAR en el marco de un trabajo final de la carrera Ingeniería en Informática. <strong>No te preocupes, no robaremos ninguna de tus credenciales. &#128274;</strong></p><br>
+			<p>Si llegaste hasta aquí probablemente fuiste parte de un simulacro de phishing llevado a cabo por un alumno de UCSE DAR en el marco de un trabajo final de la carrera Ingeniería en Informática. <strong>No te preocupes, no robaremos ninguna de tus credenciales. &#128274;</strong></p><br>
 			<p>Solicitamos que revises la información a continuación para brindarte recomendaciones sobre ciberseguridad. Además, te pedimos que <strong>no adviertas a tus compañeros sobre este email </strong> para que las estadísticas que esperamos obtener no se vean afectadas.</p> 
-		<br>
-		<p>Si tenés dudas por favor contactate con Sofía Di Nonno (alumna a cargo del proyecto) <strong>sofidinonno@gmail.com</strong> o Román Zenobi (tutor del proyecto).</p>
+			<br>
+			<p>Si tenés dudas por favor contactate con Sofía Di Nonno (alumna a cargo del proyecto) <strong>sofidinonno@gmail.com</strong> o Román Zenobi (tutor del proyecto).</p>
 		</div>
 	</div>
 
@@ -102,7 +101,7 @@
 
 			<ul id="emails" class="cd-faq__group">
 				<li class="cd-faq__title">
-					<h2>Emails</h2>
+					<h2>Emails</h2>	
 				</li>
 				<li class="cd-faq__item">
 					<a class="cd-faq__trigger" href="#0"><span>Phishing</span></a>
@@ -158,17 +157,23 @@
 						<div class="text-component">
 							<ul>
 								<li type="circle">
-									<p><strong>El mensaje fue enviado desde un dominio público.</strong></p>
+									<p><strong>El mensaje fue enviado desde un dominio público o desconocido.</strong></p>
 								</li>
 								<p>Personas u organizaciones con fines delictivos suelen enviar este tipo de correos
 									desde emails que terminan en "@gmail.com" o "hotmail.com", etc. Excepto por algunas
 									pequeñas organizaciones, la mayoría de las compañías adquieren su propio dominio
 									para brindar seguridad a sus clientes en las comunicaciones y evitar el uso de marca
 									para fraudes. </p>
-								<p>Tomemos como ejemplo este correo electrónico. El mismo fue enviado desde la dirección
-									<strong>info.dar.ucse.edu@gmail.com</strong>. Sin embargo, UCSE cuenta con un dominio
-									propio y sus emails siempre terminan en "@ucse.edu.ar".
+								<p>Por otro lado, algunos ciberdelincuentes suelen contratar un dominio para no ser detectados
+									por filtros de seguridad. En caso de que el dominio no se asemeje al nombre de la organización
+									que dice enviar el email, es posible que se trate de un email malicioso.
 								</p>
+								<p>Tomemos como ejemplo este correo electrónico. El mismo fue enviado desde una dirección con dominio
+									<strong>@get-notifications.click</strong>. Sin embargo, Microsoft cuenta con un dominio
+									propio y sus emails siempre cuentan con el dominio "@microsoft.com".
+								</p>
+								<img alt="microsoft-scam" src="{% static 'img/microsoft-scam.png' %}" width="80%"
+									height="50%" />
 								<li type="circle">
 									<p><strong>El dominio contiene errores o abreviaciones.</strong></p>
 								</li>
@@ -215,12 +220,14 @@
 									inmedianta porque se vencerá en las próximas horas o cuando te incitan a proveer un
 									nuevo medio de pago, entre otros.</p>
 								<p><img alt="urgency-email"
-										src="https://www.fiscales.gob.ar/wp-content/uploads/2022/08/Ufeci-Galicia-fraude.png"
-										width="80%" height="80%" /></p>
+										src="{% static 'img/urgency-email.png' %}"
+										width="80%" height="50%" /></p>
 								<li type="circle">
-									<p><strong>Contacta al remitente por otra vía</strong></p>
+									<p><strong>Contacta al remitente o a un superior mediante otra vía</strong></p>
 								</li>
-								<p>Si el correo electrónico luce en un 90% real pero aún tenés dudas, intentá ponerte en contacto con el remitente mediante otra vía como WhatsApp o una llamada.
+								<p>En ocasiones, un email que proviene de un remitente confiable puede ser fraudulento. Esto puede suceder cuando ésta persona quiere obtener algún beneficio personal envíandote un link malicioso, o debido a que su cuenta fue hackeada.</p> 
+								<p>Si una persona te pide que realices una acción o que le proveas información deberías preguntarte: ¿Qué rol cumple ésta persona en la organización? ¿Posee autoridad para solicitarme información? ¿Debería éstos datos ser transmitidos por correo o por un medio más seguro?</p>
+								<p>Si el correo electrónico luce legítimo pero aún tenés dudas, intentá ponerte en contacto con el remitente o con un superior mediante otra vía como WhatsApp o una llamada.
 									En el caso de que se trate de una empresa, consultá mediante su número de atención al cliente o sus canales digitales oficiales.
 								</p>
 							</ul>
@@ -243,31 +250,41 @@
 								contraseña <strong>inmediatamente.</strong></p>
 							<p>¿Cuándo debería cambiar mi contraseña inmediatamente? Miremos algunos ejemplos..</p>
 							<ul>
-								<li type="circle"><strong>Sospechas que tu cuenta fue hackeada</strong></li>
+								<li type="circle">
+									<p><strong>Sospechas que tu cuenta fue hackeada</strong></p>
+								</li>
 								<p>Resulta obvio, ¿no?. Sin embargo a veces no sabemos detectar las señales de que
 									nuestra cuenta está en peligro. ¿Tus contactos recibieron algún correo o mensaje
 									extraño y no fuiste el autor? Esa es una señal de que debes cambiar tu contraseña
 									inmediatamente. El tiempo es un factor clave en este punto, ya que si actúas rápido
 									los hackers no podrán tomar control total de tu cuenta.</p>
-								<li type="circle"><strong>Luego de una violación de datos</strong></li>
+								<li type="circle">
+									<p><strong>Luego de una violación de datos</strong></p>
+								</li>
 								<p>Si la empresa en la que trabajas o la compañía dónde tienes una cuenta sufrió un
 									ataque informático y hubo información que fué robada debes cambiar tu contraseña lo
 									antes posible. Si utilizabas esa misma contraseña para otros sitios web,
 									definitivamente también deberás cambiar la contraseña de esas cuentas también. Lo
 									primero que intentarán los hackers después de obtener tu contraseña es intentar
 									utilizarla en otros sitios.</p>
-								<li type="circle"><strong>Utilizaste una red insegura</strong></li>
+								<li type="circle">
+									<p><strong>Utilizaste una red insegura</strong></p>
+								</li>
 								<p>Quizás decidiste utilizar la red WiFi de un bar o un lugar público e iniciaste sesión
 									en alguna de tus cuentas. En este caso, una vez que estés conectado a una red segura
 									nuevamente, deberás cambiar tu contraseña.</p>
 								<p>Por lo general, las redes públicas son el foco de ataques de los hackers. Esto sucede
 									ya que las chances de que éstas redes tengan adoptadas medidas de seguridad son
 									pocas o nulas.</p>
-								<li type="circle"><strong>Descubres virus en tu dispositivo</strong></li>
+								<li type="circle">
+									<p><strong>Descubres virus en tu dispositivo</strong></p>
+								</li>
 								<p>Tu información personal puede estar en riesgo si tu dispositivo fué infectado con un
 									virus. Si tu antivirus detecta alguno deberás cambiar tus contraseñas alojadas en el
 									dispositivo. </p>
-								<li type="circle"><strong>No usas a menudo algunas cuentas</strong></li>
+								<li type="circle">
+									<p><strong>No usas a menudo algunas cuentas</strong></p>
+								</li>
 								<p>Si tienes una cuenta que usas sólo unas pocas veces al año, deberías cambiar tu
 									contraseña o en caso de no utilizarse pensar en cerrar dicha cuenta.</p>
 							</ul>
@@ -282,22 +299,34 @@
 							<p>Una contraseña fuerte es aquella que es fácil de recordar para ti pero difícil de
 								adivinar para otros. A continuación algunas sugerencias a la hora de crear una:</p>
 							<ul>
-								<li type="cricle"><strong>No uses información personal</strong></li>
+								<li type="circle">
+									<p><strong>No uses información personal</strong></p>
+								</li>
 								<p>Nunca deberías incluir información como una fecha de nacimiento, DNI, los nombres de
 									tus padres o el cumpleaños del perro. Por lo general este tipo de información es
 									pública y sólo le haría el trabajo más fácil a los hackers.</p>
-								<li type="circle"><strong>Usa una contraseña larga</strong></li>
+								<li type="circle">
+									<p><strong>Usa una contraseña larga</strong></p>
+								</li>
 								<p>Tus contraseñas deben contener como mínimo 8 caracteres. Cada caracter adicional que
 									incluyas agregará mayor seguridad. </p>
-								<li type="circle"><strong>No uses la misma contraseña en todas las cuentas</strong></li>
+								<li type="circle">
+									<p><strong>No uses la misma contraseña en todas las cuentas</strong></p>
+								</li>
 								<p>Si alguien descubre la contraseña de alguna de tus cuentas es probable que intente
 									utilizarla en otras. Por favor, ¡no repitas tus contraseñas!</p>
-								<li type="circle"><strong>Incluye todo lo que esté a disposición</strong></li>
+								<li type="circle">
+									<p><strong>Incluye todo lo que esté a disposición</strong></p>
+								</li>
 								<p>Intenta incluir números, símbolos y letras en mayúscula y minúscula. </p>
-								<li type="circle"><strong>Evita palabras del diccionario</strong></li>
+								<li type="circle">
+									<p><strong>Evita palabras del diccionario</strong></p>
+								</li>
 								<p>Evita utilizar palabras que puedan encontrarse en el diccionario. Por ejemplo, una
 									contraseña como "computadora123" es muy débil y hasta predecible.</p>
-								<li type="circle"><strong>Crea contraseñas aleatorias</strong></li>
+								<li type="circle">
+									<p><strong>Crea contraseñas aleatorias</strong></p>
+								</li>
 								<p>Puede ser difícil de recordarlas pero una contraseña segura es aquella que no tiene
 									ningun sentido e incluye lo mencionado anteriormente. Un sitio web para generar éste
 									tipo de contraseñas es <a
@@ -321,17 +350,25 @@
 							<p>Sus beneficios no son solo por conveniencia, sino también por seguridad. Muchos de estos
 								cuentan con funcionalidades como:</p>
 							<ul>
-								<li type="circle"><strong>Compartir contraseñas de forma segura</strong></li>
+								<li type="circle">
+									 <p><strong>Compartir contraseñas de forma segura</strong></p>
+								</li>
 								<p>No es recomendable compartir tus contraseñas con ninguna persona, pero en el caso de
 									que necesites hacerlo los gestores de contraseñas te lo permiten de una forma segura
 									para aquellas cuentas que estén asociadas a la herramienta.</p>
-								<li type="circle"><strong>Autocompletar tus credenciales</strong></li>
+								<li type="circle">
+									<p><strong>Autocompletar tus credenciales</strong></p>
+								</li>
 								<p>Este tipo de heramientas ofrecen autocompletar tu usuario y contraseña en las páginas
 									de incio de sesión.</p>
-								<li type="circle"><strong>Cambiar tu contraseña en cualquier momento</strong></li>
+								<li type="circle">
+									<p><strong>Cambiar tu contraseña en cualquier momento</strong></p>
+								</li>
 								<p>La mayoría ofrecen como funcionalidad un generador de contraseñas, el cuál te
 									permitirá crear credenciales fuertes y seguras.</p>
-								<li type="circle"><strong>Alacenar información adicional</strong></li>
+								<li type="circle">
+									<p><strong>Alacenar información adicional</strong></p>
+								</li>
 								<p>A veces no sólo necesitamos una contraseña, sino también una pregunta de seguridad,
 									un PIN de acceso, un archivo privado u otro tipo de información confidencial. Los
 									gestores de contraseñas permiten almacenar todo tipo de información de una manera
@@ -393,6 +430,16 @@
 										privada. Deberías evitar la navegación en estos sitios.</p>
 								</li>
 							</ul>
+						</div>
+					</div> <!-- cd-faq__content -->
+				</li>
+
+				<li class="cd-faq__item">
+					<a class="cd-faq__trigger" href="#0"><span>Verifica el dominio del sitio web.</span></a>
+					<div class="cd-faq__content">
+						<div class="text-component">
+							<p>Cuando ingreses a un sitio web siempre verifica la URL. En ocasiones, los navegadores de búsqueda muestran resultados de sitios webs que cuentan con protocolo HTTPS y parecen los oficiales, pero no lo son.</p>
+							<p>En caso de que hayas ingresado a una página web y ésta no sea la oficial, no presiones ningún link ni ingreses ningún dato o credencial, sólo cierrala.</p>
 						</div>
 					</div> <!-- cd-faq__content -->
 				</li>
