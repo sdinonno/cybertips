@@ -1184,7 +1184,6 @@ u,.text-underline{
     color:var(--color-contrast-medium, #79797c)
 }
 .form-control::-moz-placeholder{
-    opacity:1;
     color:hsl(240, 1%, 48%);
     color:var(--color-contrast-medium, #79797c)
 }
@@ -2918,9 +2917,7 @@ mark{
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale
 }
-.btn--disabled{
-    opacity:0.6
-}
+
 :root{
     --form-control-padding-x: var(--space-sm);
     --form-control-padding-y: var(--space-xs);
@@ -3087,7 +3084,6 @@ li:last-child .cd-faq__category{
         width:3px;
         background-color:hsl(73, 46%, 55%);
         background-color:var(--cd-color-2);
-        opacity:0;
         transition:opacity .2s
     }
 }
@@ -3361,7 +3357,7 @@ html:not(.js) .cd-faq__group,.cd-faq__group--selected{
 }
 .cd-faq__overlay--is-visible{
     visibility:visible;
-    opacity:1
+    opacity:1;
 }
 body{
     background-color:hsl(0, 0%, 95%);
@@ -3415,7 +3411,6 @@ body{
     background-color: rgba(0, 0, 0, .3);
     display: grid;
     place-content: center;
-    opacity: 0;
     pointer-events: none;
     z-index: 3;
     transition: 200ms ease-in-out opacity;
@@ -3445,7 +3440,6 @@ body{
 }
 
 .showPopup {
-    opacity: 1;
     transform: translateY(0);
     pointer-events: all;
 }
